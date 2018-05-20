@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/css/style.css">
+    <link rel="stylesheet" href="/vendor/css/glyphicons.css">
+    <link rel="stylesheet" href="/vendor/b3/css/bootstrap.css">
+    <link rel="stylesheet" href="/vendor/b3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/b3/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/vendor/b3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/Home.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/Admin.css" crossorigin="anonymous">
+    <title>Admin-Recruitment Tool</title>
+  </head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-xs navbar-dark bg-dark">
+             <span class="open-slide">
+                  <span class="openbtn" onclick="openNav()">&#9776;</span>
+              </span>
+              <img class="logo" src="/css/hr.png" onclick="location.href='/Home';">
+              <h3 class="" style="color:white;">Recruitment Tool</h3>
+
+            <ul class="a navitems nav ml-auto" style="margin-top: 0px;">
+              <li> <a href="/History">History</a> </li>
+              <li> <a href="/SavedPack">SavedPack</a> </li>
+              <li> <a href="#" onclick="login()">Admin</a> </li>
+              <li> <a href="#"><span class="logoutb glyphicon glyphicon-log-out"> Logout</span></a> </li>
+          </ul>
+        </nav>
+        <div id="sidebar" class="sidenav">
+          <p href="#" class="closebtn" onclick="closeNav()">&times;</p>
+          <div class="CompanyName">
+            <a class="cName" href="#">RecTool</a>
+          </div>
+          <div class="Sideitems">
+            <a href="/Home">Home</a>
+            <a href="/History">History</a>
+            <a href="/SavedPack">SavedPack</a>
+            <a href="#" onclick="login()">Admin</a>
+        </div>
+      </div>
+    </header>
+    <!-- /* CONTAINER START */ -->
+    <div class="main" id="main" style="padding:0;">
+    <!-- <div class="main" id="main"> -->
+        <div class="container" id="container">
+           <div class="title jumbotron" id="jumbotron" style="margin:0;">
+             <div class="title jumbotron p-2 bg-dark">
+                 <h3 class="title display-5 py-2 text-white">Admin</h3>
+              </div>
+              <div class="btn-group btn-group-justified" role="group">
+               <div class="btn-group" role="group">
+                 <button id="addQues" type="button" class="btn btn-primary">Add New Question</button>
+               </div>
+               <div class="btn-group" role="group">
+                 <button id="showAllQues" type="button" class="btn btn-primary">Show All Ques</button>
+               </div>
+               <div class="btn-group" role="group">
+                 <button id="edit" type="button" class="btn btn-primary">Edit</button>
+               </div>
+               <div class="btn-group" role="group">
+                 <button id="instruction" type="button" class="btn btn-primary">-</button>
+               </div>
+             </div>
+             
+              <!-- //////////Add Question //////////////// -->
+           <div class="AddQuestion" id="AddQuestion">
+             <div class="title jumbotron p-2 bg-dark" >
+                 <h3 class="title display-5 py-2 text-white">Add New Questions</h3>
+              </div>
+              <!-- <div class="title jumbotron" id="jumbotron" style="margin:0;"> -->
+              <div class="title jumbotron p-2 bg-light">
+                    <!--<hr>-->
+                    <!--<h4 style="text-align:center;">Tick the checkbox for each question you want to include in your pack</h4>-->
+            
+                    <form>
+                    <h4> Select Core Competency </h4>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio" id="CC1" value="value1">Making Customers More Successful</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="CC2" value="value2">Shaping Direction</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="CC3" value="value3">Driving High Performance </label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="CC4" value="value4">Developing Others</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="CC5" value="value5">Developing Self </label> <br>
+                    </form>
+                    <form id="SC1">
+                    <h4> Select Supporting Competency </h4>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio" id="SC1a" value="value1">Building Relationships</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="SC1b" value="value2">Innovation</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="SC1c" value="value3">ICCC</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="SC1d" value="value4">Negotiations</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="SC1e" value="value5">High Quality</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="SC1e" value="value5">Commitment</label> <br>
+                    </form>
+                    <form id="SC2">
+                    <h4> Select Supporting Competency </h4>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio" id="SC1a" value="value1">Business Acumen</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="SC1b" value="value2">Communication</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="SC1c" value="value3">Dealing with Ambiguity</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="SC1d" value="value4">Managing Strategy</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="SC1e" value="value5">Cross Border Thinking</label> <br>
+                        <label class="radio-inline"> 
+                          <input type="radio" name="optradio" id="SC1e" value="value5">Problem Solving</label> <br>
+                    </form>
+                 
+                    <!--<form id="lavel">-->
+                    <!--<h4> Select Level </h4>-->
+                    <!--    <label class="radio-inline">-->
+                    <!--      <input type="radio" name="optradio" id="CC1" value="value1">Frontline</label> <br>-->
+                    <!--    <label class="radio-inline"> -->
+                    <!--      <input type="radio" name="optradio" id="CC2" value="value2">Professional</label> <br>-->
+                    <!--    <label class="radio-inline"> -->
+                    <!--      <input type="radio" name="optradio" id="CC3" value="value3">Manager</label> <br>-->
+                    <!--    <label class="radio-inline"> -->
+                    <!--</form>-->
+                     
+                    
+               
+                      <div class="row p-0 jumbotron bg-dark">
+                        <div class="col-sm-12" style="padding-right: 2px;">
+                            <form class="form-inline my-2 my-lg-0 float-right ">
+                                <button class="button button2">Home</button>
+                                <button class="button button2">Summary</button>
+                                <button class="button button2">Add Questions</button>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+           </div>
+             
+    
+         
+                </div> <!--jumbotron -->
+            </div> <!--container -->
+        </div>  <!--main --> 
+            
+
+    <script src="/vendor/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="/vendor/js/jquery-3.1.1.min.js"></script>
+    <script src="/vendor/js/script.js"></script>
+    <script src="/vendor/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+       
+       $('#addQues').click(function(){
+    //   $('#home').hide();
+       $('#AddQuestion').show();  
+     });
+       $('#showAllQues').click(function(){
+      $('#AddQuestion').hide();
+    //   $('#AddQuestion').show();  
+     });
+    //   $('#addQues').click(function(){
+    // //   $('#home').hide();
+    //   $('#AddQuestion').show();  
+    //  });
+
+        function openNav() {
+            document.getElementById("sidebar").style.width = "210px";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
+            document.getElementById("container").style.backgroundColor = "#B2B2B2";
+        }
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "#F0F1F6";
+            document.getElementById("container").style.backgroundColor = "#F0F1F6";
+        }
+        $(document.getElementById("main")).click( function() {
+          closeNav();
+        });
+    </script>
+
+</body>
+
+</html>

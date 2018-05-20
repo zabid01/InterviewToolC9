@@ -1,0 +1,63 @@
+
+/* //////////////CONTAINER START///////////////// */
+
+.container{
+  padding: 0;
+}
+.main{
+  padding: 0;
+}
+.jumbotron{
+  margin: 0;
+  /* padding: 350px; */
+}
+.title{
+  padding-top: 20px;
+  margin: 6px;
+  /* padding-bottom: auto; */
+}
+.title2{
+  margin-top: 0;
+  font-size: 23px;
+  text-align: center;
+}
+.b1{
+  height:35px;
+}
+.b2{
+  height:35px;
+  width: 70px;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    /* opacity: .8; */
+}
+.button {
+    background-color: #25ab61;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 4px;
+}
+
+/*//////////////  ADMIN  ///////////////*/
+.AddQuestion{
+  display: none;
+}
+.form-check-label{
+padding-left: 20px;
+  
+}
+
+@media (max-width:746px) {
+
+
+}

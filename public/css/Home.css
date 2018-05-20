@@ -1,0 +1,235 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F0F1F6;
+    transition: background-color .9s;
+}
+.question{
+  display: none;
+}
+/*//////////////  NAVBAR /////////////*/
+.navbar{
+  height: 70px;
+  min-width: 100%;
+  border-radius: 0;
+  margin:0;
+}
+header h3{
+  font-size: 27px;
+  margin: 0;
+  margin-left:5px;
+}
+.logo{
+   /* width: 120px; */
+   max-width: 12%;
+   height: auto;
+   display: block;
+   padding-left: 10px;
+   /* padding-bottom: 2px; */
+   cursor: pointer;
+}
+.closebtn:hover,.openbtn:hover{
+   opacity: .8;
+}
+.navitems a {
+  text-decoration: none;
+  color: white;
+}
+.navitems a:hover {
+    /* text-decoration: none; */
+    /* color: blue; */
+    /* background: #fff; */
+}
+.logoutb {
+    cursor: pointer;
+}
+/*////////////// SIDEBAR /////////////*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #32323A;
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 0.93;
+}
+.sidenav a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    border-bottom: 1px solid #393941;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.Sideitems a{
+  font-size: 17px;
+}
+.sidenav .Sideitems a:hover{
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #3DADC3;
+    background: #fff;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.closebtn{
+  margin-top: 10px;
+  color: white;
+  cursor: pointer;
+}
+.openbtn{
+  margin: 0;
+  padding: 0;
+  font-size:30px;
+  cursor:pointer;
+  color: white;
+}
+.CompanyName  {
+  padding-top:  4px;
+  background-color: #3DADC3;
+  font-size: 30px;
+}
+.cName{
+  cursor: default;
+}
+
+/* //////////////CONTAINER START///////////////// */
+.container{
+  padding: 0;
+}
+.main{
+  padding: 0;
+}
+.jumbotron{
+  margin: 0;
+  /* padding: 350px; */
+}
+.title{
+  padding-top: 20px;
+  margin: 6px;
+  /* padding-bottom: auto; */
+}
+.title2{
+  margin-top: 0;
+  font-size: 23px;
+  text-align: center;
+}
+.b1{
+  height:35px;
+}
+.b2{
+  height:35px;
+  width: 70px;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    /* opacity: .8; */
+}
+.button {
+    background-color: #25ab61;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 4px;
+}
+/* /////////////// MODAL ////////////////// */
+.modal{
+  padding-top: 100px;
+}
+/* .modal{
+  padding-top: 100px;
+} */
+.modal-header{
+  padding-bottom: 5px;
+}
+.modal-body{
+  padding-bottom: 0px;
+  padding-top: 15px;
+}
+.modal-footer{
+  padding-top: 5px;
+  padding-bottom: 05px;
+}
+.modal-bodyCandidate{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+}
+/* ////////////////// */
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+.buttonS {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.buttonA:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+label{
+  font-size: 15px;
+}
+.containerS {
+    padding: 16px;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+
+}
+
+
+@media (max-width:746px) {
+
+
+}

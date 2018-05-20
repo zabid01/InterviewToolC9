@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/css/style.css">
+    <link rel="stylesheet" href="/vendor/css/glyphicons.css">
+    <link rel="stylesheet" href="/vendor/b3/css/bootstrap.css">
+    <link rel="stylesheet" href="/vendor/b3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/b3/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/vendor/b3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/Home.css" crossorigin="anonymous">
+      <title>Saved Pack</title>
+  </head>
+
+<body>
+  <header>
+      <nav class="navbar navbar-expand-xs navbar-dark bg-dark">
+             <span class="open-slide">
+                  <span class="openbtn" onclick="openNav()">&#9776;</span>
+              </span>
+              <img class="logo" src="/css/hr.png" onclick="location.href='/Home';">
+              <h3 class="" style="color:white;">Recruitment Tool</h3>
+
+            <ul class="a navitems nav ml-auto" style="margin-top: 0px;">
+              <li> <a href="/Home">Home</a> </li>
+              <li> <a href="/History">History</a> </li>
+              <li> <a href="/SavedPack">SavedPack</a> </li>
+              <li> <a href="#"><span class="logoutb glyphicon glyphicon-log-out"> Logout</span></a> </li>
+          </ul>
+        </nav>
+        <div id="sidebar" class="sidenav">
+          <p href="#" class="closebtn" onclick="closeNav()">&times;</p>
+          <div class="CompanyName">
+            <a class="cName" href="#">RecTool</a>
+          </div>
+          <div class="Sideitems">
+            <a href="/Home">Home</a>
+            <a href="/History">History</a>
+            <a href="/SavedPack">SavedPack</a>
+            <a href="#" onclick="login()">Admin</a>
+        </div>
+      </div>
+    </header>
+    <!-- /* CONTAINER START */ -->
+    <div class="main" id="main" style="padding:0;">
+    <!-- <div class="main" id="main"> -->
+        <div class="container" id="container">
+           <div class="title jumbotron" id="jumbotron" style="margin:0;">
+             <div class="title jumbotron p-2 bg-dark">
+                 <h3 class="title display-5 py-2 text-white">Saved Pack</h3>
+              </div>
+      
+
+          <!-- ////////////////////////////// -->
+                </div>
+            </div>
+        </div>
+
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    var userData = {
+      PreviousPage:'#main'
+    };
+
+     $('#l1').click(function(){
+       $('#myModalLevel').modal('toggle');
+       $('#home').hide();
+       $('#QuesC1S1L1').show();  // Condition -> only 5 can be selected
+     });
+
+        function openNav() {
+            document.getElementById("sidebar").style.width = "210px";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
+            document.getElementById("container").style.backgroundColor = "#B2B2B2";
+        }
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "#F0F1F6";
+            document.getElementById("container").style.backgroundColor = "#F0F1F6";
+        }
+        $(document.getElementById("main")).click( function() {
+          closeNav();
+        });
+    </script>
+
+</body>
+
+</html>
