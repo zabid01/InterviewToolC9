@@ -54,8 +54,11 @@
 }
 .form-check-label{
 padding-left: 20px;
-  
 }
+/*.form-control{*/
+/*  height:40px;*/
+  
+/*}*/
 
 @media (max-width:746px) {
 
